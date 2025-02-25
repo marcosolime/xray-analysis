@@ -63,3 +63,7 @@ This is the message Imari sent on the slack group:
     Best regards,
     Yuta Kimura
     Tohoku University
+
+
+(8) In data/z-volumes/fbp there is the ground truth data I need for my thesis
+    the npy ground truth volume is called fbp_enh.npy
