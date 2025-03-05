@@ -51,6 +51,7 @@ all the volumes are computed with saxnerf
         id_1                    battery volume, raw summation, size 256x256x256
 
 (7) in the first hard drive (the 8TB disk) there is an acquisition that dates to 2025.02.12
+    The folder that contains the projection is called 2025_02_12_data.
 
 This is the message Imari sent on the slack group:
     I am sending you the CT-XAFS data obtained during the recent beamtime for the sample after charging (where the charge distribution is spatially non-uniform). I would be very pleased if this data could be useful for examining the effectiveness of the new reconstruction method using data from a different batch, as well as for investigating methods for analyzing spectral data from CT images.
@@ -67,3 +68,14 @@ This is the message Imari sent on the slack group:
 
 (8) In data/z-volumes/fbp there is the ground truth data I need for my thesis
     the npy ground truth volume is called fbp_enh.npy
+
+(9) In the 8TB hard drive there is new data collected on the 25th of February.
+    Then name of the folder is 2025_02_25_data
+    It contains both raw projections and the reconstructed volume.
+
+    燃料電池のCT計測データを、SSDにいれて発送いたします。
+    SSD内のmtrフォルダに、各回転角度で取得したX線吸収係数像(rawデータ、画像サイズ横4096、縦2304ピクセル、32-bit real)が入っており、連番の一番目が-90度のデータ、最後の1800番目が+90度でのX線吸収係数像になっております(その間、0.1度刻みでX線吸収係数像)を取得しております。
+    recフォルダには、上記mtrデータをフィルタ補正逆投影法という一般的な再構成法で再構成したデータが入っております。
+    SSDが届きましたら、ご確認お願いいたします。
+    Inside the SSD, the mtr folder contains X-ray absorption coefficient images acquired at each rotational angle (raw data, image size: 4096 pixels wide × 2304 pixels high, 32-bit real). The first image in the sequence corresponds to the -90-degree data, while the 1800th image corresponds to the +90-degree data. The images are acquired at 0.1-degree intervals in between.
+    The rec folder contains reconstructed data obtained using a general reconstruction method called filtered back projection, based on the mtr data mentioned above.
